@@ -1,7 +1,7 @@
 # Shared
 variable "basename" {
   description = "Name for the VPCs to create and prefix to use for all other resources."
-  default     = "aaa"
+  default     = "perfvpc"
 }
 
 
@@ -21,7 +21,7 @@ variable "ibm_zones" {
 }
 
 variable "ubuntu1804" {
-  default = "ibm-ubuntu-18-04-1-minimal-amd64-2"
+  default = "ibm-ubuntu-24-04-minimal-amd64-1"
 }
 
 variable "profile" {
