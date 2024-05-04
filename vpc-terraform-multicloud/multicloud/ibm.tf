@@ -60,4 +60,3 @@ output "ibm1_public_ip" {
 output "ibm1_private_ip" {
   value = ibm_is_instance.vsi1.primary_network_interface[0].primary_ipv4_address
 }
-
