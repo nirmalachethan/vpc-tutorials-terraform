@@ -1,7 +1,7 @@
 # Shared
 variable "basename" {
   description = "Name for the VPCs to create and prefix to use for all other resources."
-  default     = "perfvpc"
+  default     = "perfimagevpc"
 }
 
 
