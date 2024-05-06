@@ -6,6 +6,7 @@ variable "basename" {
 
 
 variable "ssh_key_name" {
+  default = "nirmala-ssh"
 }
 
 variable "ibm_region" {
