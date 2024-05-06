@@ -21,9 +21,7 @@ resource "ibm_is_subnet" "subnet1" {
 }
 
 data "ibm_is_ssh_key" "ssh_key" {
-  name       = "nir-sshkey"
-   type       = "rsa"
-   public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCfXbvbgwWQztwtlK/DGvuXft80hyf/7Sj+PuTyvcg8xc4e+ASVpAzWell4KJuZ1sSKiud5/WaPuRpTcxpQn2E/ARln4IKRFt1YhjBo+Y33LSyPin9TiyT2PEUQzTH5guxYiDVR674A9IjEdnsr4ror1oAdHuQcGc3v9VbKvoBmAQ6y76J+Gur9TVzm2ygRVwlzvlXwaOKC7TzspxcnVOQgY12wPOoplp8JSF7o7km1sLGRmrFmIQdAzLLJ2A8ToyUhQIjVr2fcSA511GKdgrjX1qbN7s/pY0e9pLzAr4qMXsEdbVxQUUfp3oe33SFDvZORH99eb9ozPIlgyLbB2TdujOL2knT+iAgHOrzW+Gn9PxEuxtm1K/C/HkYHILlzwPRy/WCdBKWAEo/RPES2o3A1y+TbW6x0K+eIi0muswfloYyvxxVOip9AGNH56Y4fj+/6jcM4uzf3njlVP087WxRhT3o0Rf5VQzwdBlqhDUBI8M6b3bnRQ+hZP4M0L7C3cVM= nirmala.marilingaiah@nirmalamarilingaiahs-MacBook-Pro.local"
+  name = var.ssh_key_name
 }
 
 data "ibm_is_image" "ubuntu" {
