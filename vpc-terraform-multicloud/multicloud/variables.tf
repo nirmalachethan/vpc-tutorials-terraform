@@ -21,7 +21,7 @@ variable "ibm_zones" {
 }
 
 variable "ubuntu1804" {
-  default = "ibm-ubuntu-24-04-minimal-amd64-1"
+  default = "perftestimage"
 }
 
 variable "profile" {
