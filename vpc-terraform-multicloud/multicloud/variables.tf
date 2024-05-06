@@ -22,7 +22,7 @@ variable "ibm_zones" {
 }
 
 variable "ubuntu1804" {
-  default = "perftestimage"
+  default = "test1"
 }
 
 variable "profile" {
