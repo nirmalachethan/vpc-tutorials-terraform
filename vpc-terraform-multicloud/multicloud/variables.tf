@@ -1,9 +1,18 @@
+
 # Shared
+
+#---------------------------------------------------------
+## DEFINE VPC
+#---------------------------------------------------------
+
 variable "basename" {
   description = "Name for the VPCs to create and prefix to use for all other resources."
-  default     = "perfvpc01"
+  default     = "perf_vpc_01"
 }
 
+variable "vpc-count" {
+  default = 1
+}
 
 variable "ssh_key_name" {
   default = "nirmala-ssh"
